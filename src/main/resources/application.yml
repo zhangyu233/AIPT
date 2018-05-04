@@ -1,0 +1,12 @@
+server:
+  port: 8090
+  session-timeout: 30
+  tomcat.max-threads: 0
+  tomcat.uri-encoding: UTF-8
+spring:
+  influxdb:
+    url: http://202.120.46.68:8086
+    username: admin
+    password: admin
+    database: mydb
+    retention-policy: autogen

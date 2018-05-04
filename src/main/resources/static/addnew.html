@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MONITOR</title>
+    <link rel="stylesheet" type="text/css" href="../css/addnewstyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../jquery-ui/jquery-ui.css">
+    <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+    <link rel="stylesheet" href="../css/addnewstyle.css">
+    <script src = "../js/jquery-3.3.1.min.js"></script>
+    <script src="../jquery-ui/query-ui.js"></script>
+    
+</head>
+
+<body style="background:url(../img/bg.jpg); background-size:cover">
+<div id="nav">
+    <div id = "logod"> <img id = "logo" src="../img/logo1.jpg" alt="图标"> </div>
+    <div id="head"><strong> 引气报文监控系统 </strong></div>
+</div>
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="#">NAVIGATION</a>
+    <ul class="nav">
+      <li><a href="aclist.html"><i class="icon-plane" ></i>&nbsp;MESSAGE</a></li>
+      <li class="active"><a><i class="icon-plus" ></i>&nbsp;MONITOR</a></li>
+      <li><a href="ex.html"><i class="icon-filter" ></i>&nbsp;DATA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="container">
+        <table>
+            <tr valign="middle" align="center">
+                <td style="font-family: 'Times New Roman', Times, serif; font-size:14px; color:#DDD;" height="60" width="150px" bgcolor="#0199cf">
+                   STATUS<br/>
+                   <select class="select_1" onclick="setCookie('select_1',this.selectedIndex)" style="width:110px;" name="status" style="text-align:center;">
+                       <option>MONITORING</option>
+                       <option>MONITORING&nbsp;COMPLETED</option>
+                       <option>ACTION&nbsp;PLANNED</option>
+                       <option>ACTION&nbsp;DONE</option>
+                       <option>VERIFIED</option>
+                       <option>REJECTED</option>
+                       <option>DELETE</option>
+                   </select>
+                </td>
+                <td style="font-family:'Times New Roman', Times, serif; font-size:16px; color:#EEE;" bgcolor="#0CF" width="150">A/C<br/><a href="aclist.html">B-5930</a></td>
+                <td bgcolor="#0199cf" width="60" align="right"><span class="badge badge-important">36</span></td>
+                <td style="font-family:'Times New Roman', Times, serif; font-size:16px; color:#DDD"bgcolor="#0199cf" width="200">MESSAGE<br/><span style="color:#FFF; font-size:14px;">Engine 1 PRV slow to close.</span></td>
+                <td bgcolor="#0199cf" width="30"></td>
+                <td style="font-family: 'Times New Roman', Times, serif; font-size:14px; color:#EEE" bgcolor="#0CF" width="300">FROM:<br/><input type="date" name="user_date" style = "width: 70%; text-align:center; vertical-align:middle;"></td>
+                <td style="font-family: 'Times New Roman', Times, serif; font-size:14px; color:#DDD"bgcolor="#0199cf" width="300">TO:<br/><input type="date" name="user_date" style = "width: 70%; text-align:center; vertical-align:middle;"></td>
+                <td bgcolor="#0CF" width="80"><a href="chart.html"><button class="clickme">&nbsp;<i class="icon-picture"></i>&nbsp;</button></a></td>
+            </tr>
+        </table><br/>
+        
+        <table>
+            <tr valign="middle" align="center">
+                <td style="font-family: 'Times New Roman', Times, serif; font-size:14px; color:#DDD;" height="60" width="150px" bgcolor="#0199cf">
+                   STATUS<br/>
+                   <select class="select_1" onclick="setCookie('select_1',this.selectedIndex)" style="width:110px;" name="status" style="text-align:center;">
+                       <option>MONITORING</option>
+                       <option>MONITORING&nbsp;COMPLETED</option>
+                       <option>ACTION&nbsp;PLANNED</option>
+                       <option>ACTION&nbsp;DONE</option>
+                       <option>VERIFIED</option>
+                       <option>REJECTED</option>
+                       <option>DELETE</option>
+                   </select>
+                </td>
+                <td style="font-family:'Times New Roman', Times, serif; font-size:16px; color:#EEE;" bgcolor="#0CF" width="150">A/C<br/><a href="aclist.html">B-5930</a></td>
+                <td bgcolor="#0199cf" width="60" align="right"><span class="badge badge-important">36</span></td>
+                <td style="font-family:'Times New Roman', Times, serif; font-size:16px; color:#DDD"bgcolor="#0199cf" width="200">MESSAGE<br/><span style="color:#FFF; font-size:14px;">Engine 2 PRV slow to close.</span></td>
+                <td bgcolor="#0199cf" width="30"></td>
+                <td style="font-family: 'Times New Roman', Times, serif; font-size:14px; color:#EEE" bgcolor="#0CF" width="300">FROM:<br/><input type="date" name="user_date" style = "width: 70%; text-align:center; vertical-align:middle;"></td>
+                <td style="font-family: 'Times New Roman', Times, serif; font-size:14px; color:#DDD"bgcolor="#0199cf" width="300">TO:<br/><input type="date" name="user_date" style = "width: 70%; text-align:center; vertical-align:middle;"></td>
+                <td bgcolor="#0CF" width="80"><a href="chart.html"><button class="clickme">&nbsp;<i class="icon-picture"></i>&nbsp;</button></a></td>
+            </tr>
+        </table><br/>
+        
+        
+        <table>
+            <tr valign="middle" align="center">
+                <td style="font-family: 'Times New Roman', Times, serif; font-size:14px; color:#DDD;" height="60" width="150px" bgcolor="#0199cf">
+                   STATUS<br/>
+                   <select class ="select_1" onclick="setCookie('select_1',this.selectedIndex)" style="width:110px;" name="status" style="text-align:center;">
+                       <option>MONITORING</option>
+                       <option>MONITORING&nbsp;COMPLETED</option>
+                       <option>ACTION&nbsp;PLANNED</option>
+                       <option>ACTION&nbsp;DONE</option>
+                       <option>VERIFIED</option>
+                       <option>REJECTED</option>
+                       <option>DELETE</option>
+                   </select>
+                </td>
+                <td style="font-family:'Times New Roman', Times, serif; font-size:16px; color:#EEE;" bgcolor="#0CF" width="150">A/C<br/><a href="aclist.html">B-5930</a></td>
+                <td bgcolor="#0199cf" width="60" align="right"><span class="badge badge-important">36</span></td>
+                <td style="font-family:'Times New Roman', Times, serif; font-size:16px; color:#DDD"bgcolor="#0199cf" width="200">MESSAGE<br/><span style="color:#FFF; font-size:14px;">Engine 1 PRV slow to close.</span></td>
+                <td bgcolor="#0199cf" width="30"></td>
+                <td style="font-family: 'Times New Roman', Times, serif; font-size:14px; color:#EEE" bgcolor="#0CF" width="300">FROM:<br/><input type="date" name="user_date" style = "width: 70%; text-align:center; vertical-align:middle;"></td>
+                <td style="font-family: 'Times New Roman', Times, serif; font-size:14px; color:#DDD"bgcolor="#0199cf" width="300">TO:<br/><input type="date" name="user_date" style = "width: 70%; text-align:center; vertical-align:middle;"></td>
+                <td bgcolor="#0CF" width="80"><a href="chart.html"><button class="clickme">&nbsp;<i class="icon-picture"></i>&nbsp;</button></a></td>
+            </tr>
+        </table><br/>
+
+</div>
+
+
+<div id="foot" ><p style="color:#FFF; font-family:Georgia, 'Times New Roman', Times, serif">&nbsp;copyright</p></div>
+
+</body>
+</html>

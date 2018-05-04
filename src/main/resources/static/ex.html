@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DATA</title>
+    <link rel="stylesheet" type="text/css" href="../css/exstyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href = "../css/bootstrap-select.min.css">
+    <script src = "../js/jquery-3.3.1.min.js"></script>
+    <script src = "../js/highcharts.js" ></script>
+    <script src = "../js/bootstrap.min.js"></script>
+    <script src = "../js/bootstrap-select.min.js"></script>
+
+
+</head><!--<script src="../js/msglist.js"></script>-->
+<body>
+
+<div id="nav">
+    <div id = "logod"> <img id = "logo" src="../img/logo1.jpg" alt="图标"> </div>
+    <div id="head"><strong> 引气报文监控系统 </strong></div>
+</div>
+<div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="#">NAVIGATION</a>
+      <ul class="nav">
+      <li><a href="aclist.html"><i class="icon-plane" ></i>&nbsp;MESSAGE</a></li>
+      <li><a href="addnew.html"><i class="icon-plus" ></i>&nbsp;MONITOR</a></li>
+      <li class="active"><a><i class="icon-filter" ></i>&nbsp;DATA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+      </ul>   
+    </div>
+</div>
+<div id="content">
+    <div id="left">
+        <div class = "divdate">
+            <p class="typese2"><strong>DATE</strong></p>
+            <div class = "typese3">
+                <p style = "font-size:11px;font-family: 'Times New Roman'; text-align:left; color:#FFF; padding-left:30px;">FROM:</p>
+                <P  align="center"><input type="date"  id = "start_date" name="user_date" style = "width: 71%; text-align:center;"></p>
+                <p style = "font-size:11px;font-family: 'Times New Roman'; text-align:left; color:#FFF;padding-left:30px;">TO:</p>
+                <P  align="center"><input type="date" id = "end_date" name="user_date" style = "width: 71%; text-align:center;"></p>
+            </div>
+        </div>
+        <div><p class="typese2"><strong>A/C&nbsp;TYPE</strong></p></div>
+        <div class = "typese3">
+            <select id = "s1" class="selectpicker" data-live-search="true" multiple data-width="75%">
+                <option value="A330">A330</option>
+                <option value="A350">A350</option>
+                <option value="A380">A380</option>
+            </select>
+        </div>
+        <div><p class="typese2"><strong>A/C</strong></p></div>
+        <div class= "typese3">
+            <select id  = "s2" class="selectpicker" data-live-search="true" multiple data-width="75%">
+                <option value="B-5731">B-5731</option>
+                <option value="B-5903">B-5903</option>
+                <option value="B-5908">B-5908</option>
+                <option value="B-5920">B-5920</option>
+                <option value="B-5921">B-5921</option>
+                <option value="B-5926">B-5926</option>
+                <option value="B-5936">B-5936</option>
+                <option value="B-5937">B-5937</option>
+                <option value="B-5941">B-5941</option>
+                <option value="B-5942">B-5942</option>
+                <option value="B-5943">B-5943</option>
+                <option value="B-5949">B-5949</option>
+                <option value="B-5952">B-5952</option>
+
+            </select>
+        </div>
+        <div><p id = "s3" class="typese2"><strong>ATA</strong></p></div>
+        <div class="typese3">
+            <select class="selectpicker" data-live-search="true" multiple data-width="75%">
+                <option value="11"> 11 </option>
+                <option value="22"> 22 </option>
+                <option value="33"> 33 </option>
+            </select>
+        </div>
+        <div><p class="typese2"><strong>RULES</strong></p></div>
+        <div class="typese3">
+            <select id = "s4" class="selectpicker" data-live-search="true" multiple data-width="75%">
+                <option value="mean_T471">mean_T471</option>
+                <option value="mean_T474">mean_T474</option>
+                <option value="mean_T472">mean_T472</option>
+                <option value="mean_T475">mean_T475</option>
+                <option value="mean_T481">mean_T481</option>
+                <option value="mean_T482">mean_T482</option>
+                <option value="OAT">OAT</option>
+            </select>
+        </div><br/>
+
+        <p align="center">
+  <button class="btn" id = "BTN1" type="button">&nbsp;APPLY&nbsp;</button>
+        </p><br/>
+    </div>
+    <div id="right">
+       <div id="container1">
+		 <!-- <script type="text/javascript" src="../js/chart.js"></script> -->
+
+       </div>
+    </div>
+</div>
+<div id="foot" ><p style="color:#FFF; font-family:Georgia, 'Times New Roman', Times, serif">&nbsp;copyright</p></div>
+
+<!--<script>-->
+    <!--$(document).ready(function() {-->
+        <!--$.post("search",-->
+            <!--{-->
+
+                <!--measurement: 2,-->
+                <!--// plane_num: plane_num[0],-->
+                <!--// url:"http://www.runoob.com"-->
+            <!--},-->
+            <!--function(data,status){-->
+                <!--alert("数据: \n" + data + "\n状态: " + status);-->
+            <!--});-->
+    <!--});-->
+<!--</script>-->
+<script type="text/javascript" src="../js/chart.js"></script>
+
+</body>
+</html>
